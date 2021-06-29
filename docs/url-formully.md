@@ -2,7 +2,7 @@
 
 Este es un trabajo que busca poder responder un formulario de pregutas y enviarlas a un correo.
 
-##API
+## API
 
 | Path                  | Descripción |
 | --------------------- | ----------- |
@@ -14,7 +14,7 @@ Este es un trabajo que busca poder responder un formulario de pregutas y enviarl
 A continuacion se tiene un ejemplo del diseño del programa
 
 
-##Formulario
+## Formulario
 <!-- Blockquote -->
 > Ingrese Su nombre
 <!-- Blockquote -->
@@ -22,6 +22,6 @@ A continuacion se tiene un ejemplo del diseño del programa
 <!-- Blockquote -->
 > Ejemplodecorreo@ejemplo.com
 
-'''bash
+```bash
 Este es un ejemplo
-'''
+```
