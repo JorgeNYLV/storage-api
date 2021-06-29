@@ -13,5 +13,15 @@ Este es un trabajo que busca poder responder un formulario de pregutas y enviarl
 
 A continuacion se tiene un ejemplo del diseño del programa
 
+
+##Formulario
 <!-- Blockquote -->
-> formulario
+> Ingrese Su nombre
+<!-- Blockquote -->
+> Ingrese el nombre de su empresa
+<!-- Blockquote -->
+> Ejemplodecorreo@ejemplo.com
+
+'''bash
+Este es un ejemplo
+'''
