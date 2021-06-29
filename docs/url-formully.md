@@ -6,9 +6,9 @@ Este es un trabajo que busca poder responder un formulario de pregutas y enviarl
 
 | Path                  | Descripción |
 | --------------------- | ----------- |
-| /url/login.py            |             |
-| /url/post.py        |             |
-| /url/             |             |
+| /url/.py         |             |
+| /url/post.json        |Este archivo se encargara de almacenar toda la informacion ingresada en las casillas, {"username": "UserName","Empresa":"empresaname","Email":"emailexample","Mensaje":"Mensajex","si":"sies","no":"noes"} En el caso de las opciones de **si** y **no** estas ejecutaran acciones que seran ejeutas con un **if** y un **else**  |
+| /url/send.py             |Este archivo ejecutara la validacion de todos los datos que fueron ingresados en el formulario.             |
 
 
 A continuacion se tiene un ejemplo del diseño del programa
@@ -23,8 +23,12 @@ A continuacion se tiene un ejemplo del diseño del programa
 > Ejemplodecorreo@ejemplo.com
 
 ```bash
-Este es un ejemplo
+Es usted un proveedor o esta interesado trabajar con nosotros
 ```
-* [x] ejemplo
-* [x] ejemplo
-* [x] ejemplo
+* [x] Si
+* [x] No
+En caso de que la respuesta sea **si** desplegara otras casillas y si es **no** hara nada
+<!-- Blockquote -->
+> Productos que manejan
+<!-- Blockquote -->
+> Operaciones que requieren
