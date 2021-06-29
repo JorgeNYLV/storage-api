@@ -25,6 +25,6 @@ A continuacion se tiene un ejemplo del diseño del programa
 ```bash
 Este es un ejemplo
 ```
-* [] ejemplo
-* [] ejemplo
-* [] ejemplo
+* [x] ejemplo
+* [x] ejemplo
+* [x] ejemplo
