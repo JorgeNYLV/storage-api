@@ -24,10 +24,10 @@ A continuacion se tiene un ejemplo del diseño del programa
 
 ```bash
 Es usted un proveedor o esta interesado trabajar con nosotros
-```
 * [x] Si
 * [x] No
-En caso de que la respuesta sea **si** desplegara otras casillas y si es **no** hara nada
+```
+En caso de que la respuesta sea **si** desplegara otras casillas y si es >no> hara nada 
 <!-- Blockquote -->
 > Productos que manejan
 <!-- Blockquote -->
