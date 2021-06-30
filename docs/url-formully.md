@@ -1,6 +1,6 @@
 # Formularios
 
-Este es un trabajo que busca poder responder un formulario de pregutas,registrar los datos  y enviarlas a un correo.
+Este es un trabajo que busca poder responder un formulario de pregutas para registrar datos de usario y  enviarlos a un correo.
 
 ## API
 
@@ -30,4 +30,17 @@ A continuacion se tiene un ejemplo del diseño del programa
 
 ## Operaciones del usuario
 ### Relleno de formulario
-> Solicita su nombre, correo electronico,nombre de la empresa y datos adicioneles.
+* Solicita su nombre, correo electronico,nombre de la empresa y datos adicioneles.
+* Cada usario tendra una id autoincrementable
+
+#Operaciones de consulta
+* Poder consultar todos los usario y los datos
+
+#operaciones de administrador
+* Consultar, editar y eliminar usarios
+* poder odificar la direccion hacia donde se envian los correos
+
+#Consulta de datos
+* por id
+* por orden alfabetico
+* por fecha de registro
