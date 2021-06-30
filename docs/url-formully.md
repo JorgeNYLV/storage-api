@@ -34,3 +34,7 @@ En caso de que la respuesta sea `si` desplegara otras casillas y si es `no` hara
 > Operaciones que requieren
 
 `send` `deleate`
+# operacion de almacenamiento de datos
+
+## Operaciones del usuario
+### Relleno de fotrmulario 
