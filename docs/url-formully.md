@@ -60,3 +60,14 @@ A continuacion se tiene un ejemplo del diseño del programa
 > {"code : "500",
 "message": "El servidor esta sufriendo amsiedad",
 ![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
+
+<!-- Blockquote -->
+> {"code : "404",
+"message": "Pagina no encomtrada",
+![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
+<!-- Blockquote -->
+> {"code : "400",
+"message": "Solicitud Incorrecta",
+![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
+
+# Implementación de rutas para los recursos
