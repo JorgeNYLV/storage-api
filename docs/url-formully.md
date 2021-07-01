@@ -54,9 +54,9 @@ A continuacion se tiene un ejemplo del diseño del programa
 "datos" : "Es bait"}
 
 <!-- Blockquote -->
-> {"solicitud" : "Registro Existoso"}
+> {"solicitud" : "Registro Exitoso"}
 
 <!-- Blockquote -->
 > {"code : "500",
-"message": "El servidor esta sufriendo amsiedad"
-![Image of Yaktocat](https://latinversionistas.com/wp-content/uploads/elementor/thumbs/cheems-no-puede-ser-en-la-academia-latinoamericana-de-inversionistas-p3w4067e630uqw60m0c1fmzr1qn4w6x0b4bcod5kso.png)}
+"message": "El servidor esta sufriendo amsiedad",
+![Cheems](https://latinversionistas.com/wp-content/uploads/elementor/thumbs/cheems-no-puede-ser-en-la-academia-latinoamericana-de-inversionistas-p3w4067e630uqw60m0c1fmzr1qn4w6x0b4bcod5kso.png)}
