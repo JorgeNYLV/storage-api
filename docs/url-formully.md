@@ -59,4 +59,4 @@ A continuacion se tiene un ejemplo del diseño del programa
 <!-- Blockquote -->
 > {"code : "500",
 "message": "El servidor esta sufriendo amsiedad",
-![Cheems](https://latinversionistas.com/wp-content/uploads/elementor/thumbs/cheems-no-puede-ser-en-la-academia-latinoamericana-de-inversionistas-p3w4067e630uqw60m0c1fmzr1qn4w6x0b4bcod5kso.png)}
+![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
