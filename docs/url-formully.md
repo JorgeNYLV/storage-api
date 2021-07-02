@@ -39,13 +39,19 @@ A continuacion se tiene un ejemplo del diseño del programa
 <!-- Blockquote -->
 > {"ID" : 1,
 "username" : "Juan Perez",
+"Fecha de inicio" : "02/07/2021",
 "Edad" :"21",
 "Genero" :"Hombre",
 "Email" :  "estenoesunbait@bait.com"
 }
-
 <!-- Blockquote -->
-> {"solicitud" : "Registro Exitoso"}
+> {"Prgunta " : "¿Que es esto?",
+"Respuesta" :"Un ejemplo",
+"}
+
+# Mensajes de error y de solicitudes exitosas 
+<!-- Blockquote -->
+> {"solicitud" : "Encuesta enviada exitosamente"}
 
 <!-- Blockquote -->
 > {"code : "500",
