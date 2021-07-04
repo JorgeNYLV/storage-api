@@ -6,10 +6,10 @@ Este es un trabajo que busca poder responder un formulario de pregutas donde el 
 
 | Path                  | Descripción |
 | --------------------- | ----------- |
-| /url/post.json        |Este archivo se encargara de almacenar toda la informacion ingresada en las casillas, {"username": "UserName","Edad":"edad","Email":"emailexample","genero":"gener"|
-| /url/preguntas.py         |este archivo alamacenara las respuestas del formulario |
+| /url/encuesta.py       |Este archivo se encargara de almacenar toda la informacion ingresada en las casillas, {"username": "UserName","Edad":"edad","Email":"emailexample","genero":"gener"|
+| /url/respuestas.py         |este archivo alamacenara las respuestas del formulario |
 | /url/send.py             |Este archivo ejecutara la validacion de todos los datos que fueron ingresados en el formulario.             |
-| /url/user.py         |este archivo alamacenara todos los datos y respuestasinformacion registrada en el formulario |
+| /url/id.py         |este archivo tendra el ID de la encuesta |
 
 A continuacion se tiene un ejemplo del diseño del programa
 
@@ -49,7 +49,16 @@ A continuacion se tiene un ejemplo del diseño del programa
 "Respuesta" :"Un ejemplo",
 "}
 
-# Mensajes de error y de solicitudes exitosas 
+
+<!-- Blockquote -->
+> {"Prgunta " : "¿Cual es la opcion correcta?",
+"Respuesta" :"A",
+"Respuesta" :"B",
+"Respuesta" :"C",
+"Respuesta" :"D"
+Answer : [2]
+"}
+# Mensajes de error y de solicitudes exitosas
 <!-- Blockquote -->
 > {"solicitud" : "Encuesta enviada exitosamente"}
 
@@ -68,3 +77,9 @@ A continuacion se tiene un ejemplo del diseño del programa
 ![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
 
 # Implementación de rutas para los recursos
+POST /URL-FORULY/encuesta
+{tittle:"Encuesta ",
+fechaini:"04/07/2021,
+fechafin:"05/07/2021",
+ID:1
+}
