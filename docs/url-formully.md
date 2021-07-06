@@ -32,6 +32,10 @@ A continuacion se tiene un ejemplo del diseño del programa
 * Por orden alfabetico
 * Por fecha de registro
 
+#creacion de encuestas
+* Numero de preguntas
+* Fecha de inicio y final
+
 #Estructuras de solicitud y respuesta
 
 
