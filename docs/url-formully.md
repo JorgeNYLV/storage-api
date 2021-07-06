@@ -6,7 +6,7 @@ Este es un trabajo que busca poder responder un formulario de pregutas donde el 
 
 | Path                  | Descripción |
 | --------------------- | ----------- |
-| /url/encuesta.py       |Este archivo se encargara de almacenar toda la informacion ingresada en las casillas, {"username": "UserName","Edad":"edad","Email":"emailexample","genero":"gener"|
+| /url/encuesta.py       |Este archivo se encargara de almacenar toda la informacion ingresada en las casillas, {"username": "UserName","Edad":"edad","Email":"emailexample","genero":"gener","fechaini":"fecha de inicio","fechafin":"fecha de final"|
 | /url/respuestas.py         |este archivo alamacenara las respuestas del formulario |
 | /url/send.py             |Este archivo ejecutara la validacion de todos los datos que fueron ingresados en el formulario.             |
 | /url/id.py         |este archivo tendra el ID de la encuesta |
@@ -58,19 +58,23 @@ A continuacion se tiene un ejemplo del diseño del programa
 "Respuesta" :"D"
 Answer : [2]
 "}
-# Mensajes de error y de solicitudes exitosas
+# Mensaje de encuesta enviada
 <!-- Blockquote -->
 > {"solicitud" : "Encuesta enviada exitosamente"}
 
+# Mensaje de error con la pagina
 <!-- Blockquote -->
 > {"code : "500",
 "message": "El servidor esta sufriendo amsiedad",
 ![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
 
+# Mensaje de error con encuestas no encontradas
 <!-- Blockquote -->
 > {"code : "404",
 "message": "Pagina no encomtrada",
 ![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
+
+# Mensaje de error con solicitud erronea
 <!-- Blockquote -->
 > {"code : "400",
 "message": "Solicitud Incorrecta",
@@ -82,4 +86,15 @@ POST /URL-FORULY/encuesta
 fechaini:"04/07/2021,
 fechafin:"05/07/2021",
 ID:1
+}
+
+GET/URL-FORMULY/encuesta/1
+{
+respuestas :
+ [0,
+ 1,
+ 3,
+ 0,
+ 2,
+ 1]
 }
