@@ -1,6 +1,8 @@
 # Formularios
 
-Este es un trabajo que busca poder responder un formulario de pregutas donde el usario pondra su informacion basica y repondera una serie de preguntas.
+Este es un trabajo que busca poder responder un formulario de pregutas donde el usario pondra su informacion basica y repondera una serie de preguntas.Los formularios solo se podrann responder una vez y estos estaran registrados por un ID unica asi que el usario solo podra responder una vez, en caso de que se envien datos inccorrectos, la pagina tendra distintos mensajes de error dependiento el fallo que sea encontrado.
+
+Para este proyecto no se rquieren grandes infrestructuras ya que solo se requiere tener un servidor capaz de mantener el programa estable y de un personal para poder manternelo y darle mantenimiento, asi como tener uno para estar formlando, modificando y creando los cuestionarios.
 
 ## PATH
 
@@ -21,24 +23,29 @@ A continuacion se tiene un ejemplo del diseño del programa
 * Solicita su nombre, correo electronico,genero, edad.
 
 # Operaciones de consulta
-* Poder consultar todos los usarios y cuestonarios
+* Poder consultar todos los usarios y cuestonarios realizados.
 
 # Operaciones de administrador
-* Consultar y eliminar usarios o formularios
-* Poder modificar la direccion hacia donde se envian los correos
+* Consultar y eliminar usarios o formularios.
+* Poder modificar la direccion hacia donde se envian los correos.
 
-#Consulta de datos
+# Consulta de datos
 * Por ID
 * Por orden alfabetico
 * Por fecha de registro
 
-#creacion de encuestas
+# creacion de encuestas
 * Numero de preguntas
 * Fecha de inicio y final
 
+# Consulta de respuestas
+* Numero de preguntas
+* Preguntas correctas
+* Pregutas incorrectas
+* Preguntas Abiertas
+* Preguntas Cerradas
+
 #Estructuras de solicitud y respuesta
-
-
 
 <!-- Blockquote -->
 > {"ID" : 1,
@@ -69,20 +76,17 @@ Answer : [2]
 # Mensaje de error con la pagina
 <!-- Blockquote -->
 > {"code : "500",
-"message": "El servidor esta sufriendo amsiedad",
-![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
+"message": "El servidor esta sufriendo problemas",
 
 # Mensaje de error con encuestas no encontradas
 <!-- Blockquote -->
 > {"code : "404",
-"message": "Pagina no encomtrada",
-![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
+"message": "Pagina no encontrada",
 
 # Mensaje de error con solicitud erronea
 <!-- Blockquote -->
 > {"code : "400",
 "message": "Solicitud Incorrecta",
-![Cheems](https://github.com/JorgeNYLV/storage-api/blob/master/cheems.png)}
 
 # Implementación de rutas para los recursos
 POST /URL-FORULY/encuesta
