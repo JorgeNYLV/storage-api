@@ -13,17 +13,23 @@ Para este proyecto no se rquieren grandes infrestructuras ya que solo se requier
 | /url/send.py             |Este archivo ejecutara la validacion de todos los datos que fueron ingresados en el formulario.             |
 | /url/id.py         |este archivo tendra el ID de la encuesta |
 
-A continuacion se tiene un ejemplo del diseño del programa
 
+Al ser un formulario se eben de tener un acceso a la inforacion de los formularios que sean contestados, ya que es necesario saber que datos y quien esta contestando dichos formularios.
 
 # Operacion de almacenamiento de datos
 
-## Operaciones del usuario
+## Consulta de datos
+
 ### Relleno de formulario
-* Solicita su nombre, correo electronico,genero, edad.
+* Solicitar su nombre
+* correo electronico
+* genero
+* edad
+
 
 # Operaciones de consulta
-* Poder consultar todos los usarios y cuestonarios realizados.
+* Poder consultar todos los usarios
+* cuestonarios realizados.
 
 # Operaciones de administrador
 * Consultar y eliminar usarios o formularios.
@@ -45,6 +51,8 @@ A continuacion se tiene un ejemplo del diseño del programa
 * Preguntas Abiertas
 * Preguntas Cerradas
 
+Una vez planteada todos los datos de la estrucctura
+
 #Estructuras de solicitud y respuesta
 
 <!-- Blockquote -->
@@ -55,12 +63,13 @@ A continuacion se tiene un ejemplo del diseño del programa
 "Genero" :"Hombre",
 "Email" :  "estenoesunbait@bait.com"
 }
+# Ejemplo de pregunta abierta
 <!-- Blockquote -->
 > {"Prgunta " : "¿Que es esto?",
 "Respuesta" :"Un ejemplo",
 "}
 
-
+# Ejemplo de estructura de pregunta de opcion multiple
 <!-- Blockquote -->
 > {"Prgunta " : "¿Cual es la opcion correcta?",
 "Respuesta" :"A",
@@ -87,6 +96,9 @@ Answer : [2]
 <!-- Blockquote -->
 > {"code : "400",
 "message": "Solicitud Incorrecta",
+
+
+Una vez que se tengan las consultas y los mensajes de la pagina se deberan  implentar las estructuras de las rutas del proyecto
 
 # Implementación de rutas para los recursos
 POST /URL-FORULY/encuesta
