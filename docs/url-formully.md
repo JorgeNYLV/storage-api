@@ -2,7 +2,9 @@
 
 Este es un trabajo que busca poder responder un formulario de pregutas donde el usario pondra su informacion basica y repondera una serie de preguntas.Los formularios solo se podrann responder una vez y estos estaran registrados por un ID unica asi que el usario solo podra responder una vez, en caso de que se envien datos inccorrectos, la pagina tendra distintos mensajes de error dependiento el fallo que sea encontrado.
 
-Para este proyecto no se rquieren grandes infrestructuras ya que solo se requiere tener un servidor capaz de mantener el programa estable y de un personal para poder manternelo y darle mantenimiento, asi como tener uno para estar formlando, modificando y creando los cuestionarios.
+Para este proyecto no se requieren grandes infrestructuras ya que solo se requiere tener un servidor capaz de mantener el programa estable y de un personal para poder manternelo y darle mantenimiento, asi como tener uno para estar formlando, modificando y creando los cuestionarios.
+
+Este proyecto forzozamente debe de estar conectada a internet para poder recolectar toda la informacion de los formularios, asi como poder consultar todos los datos que los usarios introduscan.
 
 ## PATH
 
@@ -101,13 +103,14 @@ Answer : [2]
 Una vez que se tengan las consultas y los mensajes de la pagina se deberan  implentar las estructuras de las rutas del proyecto
 
 # Implementación de rutas para los recursos
-POST /URL-FORULY/encuesta
+# Ejemplo de consulta de formularios.
+GET /URL-FORULY/encuesta
 {tittle:"Encuesta ",
 fechaini:"04/07/2021,
 fechafin:"05/07/2021",
 ID:1
 }
-
+# Ejemplo de datos de una respuestas de preguntas de opcion multible
 GET/URL-FORMULY/encuesta/1
 {
 respuestas :
@@ -117,4 +120,19 @@ respuestas :
  0,
  2,
  1]
+}
+# Ejemplo de datos de una respuesta abierta
+GET/URL-FORMULY/encuesta/1
+{
+respuesta :
+ [  Ejempo de respuesta abierta]
+}
+# Consulta de datos de usario
+GET/URL-FORMULY/encuesta/1
+{
+ {"username" : "Juan Perez",
+ "Fecha de inicio" : "02/07/2021",
+ "Edad" :"21",
+ "Genero" :"Hombre",
+ "Email" :  "estenoesunbait@bait.com"}
 }
