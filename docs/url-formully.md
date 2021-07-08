@@ -55,7 +55,7 @@ Al ser un formulario se eben de tener un acceso a la inforacion de los formulari
 * Preguntas Abiertas
 * Preguntas Cerradas
 
-Una vez planteada todos los datos de la estrucctura
+Una vez planteada todos los datos de la estructura
 
 ## Estructuras de solicitud y respuesta
 
@@ -349,3 +349,19 @@ Date:   Thu Jun 24 19:44:23 2021 -0700
 
     Se agrego un archivo de documentacion para proyecto url-formully
 ```
+# Crear un fork del proyecto storage-api
+En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono para empezar a trabajar
+| Path                  | Descripción |
+| --------------------- | ----------- |
+| archivo original  | 8c9c250a11ab0ac5c2b83ceb07cc5ec8dc1560f7           |
+| Crear fork y agregar md      |66b9c7e438394b736470eeba8e4359adc93eebd1  |
+
+
+#  Crear todas las rutas especificadas en su archivo de documentación 
+En esta tabla se creon las rutas de las estructuras de los formatos de py
+| Path                  | Descripción |
+| --------------------- | ----------- |
+| Commit de rutas py | 70d70f91083316110cedcafd7e6428fd0e050d5d|
+
+# Crear mock ups, de las vistas que desean implementar, utilizando MoqUps
+Aqui se creo una nueva carpeta en la ruta  ```/docs/assets/```
