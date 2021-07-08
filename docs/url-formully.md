@@ -349,7 +349,9 @@ Date:   Thu Jun 24 19:44:23 2021 -0700
 
     Se agrego un archivo de documentacion para proyecto url-formully
 ```
-# Crear un fork del proyecto storage-api
+# Computo en la nube
+
+## Crear un fork del proyecto storage-api
 En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono para empezar a trabajar
 | Path                  | Descripción |
 | --------------------- | ----------- |
@@ -357,11 +359,14 @@ En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono 
 | Crear fork y agregar md      |66b9c7e438394b736470eeba8e4359adc93eebd1  |
 
 
-#  Crear todas las rutas especificadas en su archivo de documentación 
+##  Crear todas las rutas especificadas en su archivo de documentación
 En esta tabla se creon las rutas de las estructuras de los formatos de py
 | Path                  | Descripción |
 | --------------------- | ----------- |
 | Commit de rutas py | 70d70f91083316110cedcafd7e6428fd0e050d5d|
 
-# Crear mock ups, de las vistas que desean implementar, utilizando MoqUps
-Aqui se creo una nueva carpeta en la ruta  ```/docs/assets/```
+## Crear mock ups, de las vistas que desean implementar, utilizando MoqUps
+Aqui se creo una nueva carpeta en la ruta  ```/docs/assets``` en donde esta muestran la estructura que se desea que tenga la pagina, al ser imagenes de dmostracion se agregaron pocos datos en el caso de las preguntas.
+![Imagen de formato de encuesta](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-01-encuesta%20formato.png)
+![Imagen de formato de encuesta](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-02-estructura%20de%20encuesta.png)
+![Imagen de edicion de encuestas](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-03-tabla%20de%20consulta%20y%20edicion%20de%20encuestas.png)
