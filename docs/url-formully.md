@@ -18,35 +18,35 @@ Este proyecto forzozamente debe de estar conectada a internet para poder recolec
 
 Al ser un formulario se eben de tener un acceso a la inforacion de los formularios que sean contestados, ya que es necesario saber que datos y quien esta contestando dichos formularios.
 
-# Operacion de almacenamiento de datos
+## Operacion de almacenamiento de datos
 
 ## Consulta de datos
 
-### Relleno de formulario
+## Relleno de formulario
 * Solicitar su nombre
 * correo electronico
 * genero
 * edad
 
 
-# Operaciones de consulta
+## Operaciones de consulta
 * Poder consultar todos los usarios
 * cuestonarios realizados.
 
-# Operaciones de administrador
+## Operaciones de administrador
 * Consultar y eliminar usarios o formularios.
 * Poder modificar la direccion hacia donde se envian los correos.
 
-# Consulta de datos
+## Consulta de datos
 * Por ID
 * Por orden alfabetico
 * Por fecha de registro
 
-# creacion de encuestas
+## creacion de encuestas
 * Numero de preguntas
 * Fecha de inicio y final
 
-# Consulta de respuestas
+## Consulta de respuestas
 * Numero de preguntas
 * Preguntas correctas
 * Pregutas incorrectas
@@ -55,7 +55,7 @@ Al ser un formulario se eben de tener un acceso a la inforacion de los formulari
 
 Una vez planteada todos los datos de la estrucctura
 
-#Estructuras de solicitud y respuesta
+## Estructuras de solicitud y respuesta
 
 <!-- Blockquote -->
 > {"ID" : 1,
@@ -65,13 +65,13 @@ Una vez planteada todos los datos de la estrucctura
 "Genero" :"Hombre",
 "Email" :  "estenoesunbait@bait.com"
 }
-# Ejemplo de pregunta abierta
+## Ejemplo de pregunta abierta
 <!-- Blockquote -->
 > {"Prgunta " : "¿Que es esto?",
 "Respuesta" :"Un ejemplo",
 "}
 
-# Ejemplo de estructura de pregunta de opcion multiple
+## Ejemplo de estructura de pregunta de opcion multiple
 <!-- Blockquote -->
 > {"Prgunta " : "¿Cual es la opcion correcta?",
 "Respuesta" :"A",
@@ -80,21 +80,21 @@ Una vez planteada todos los datos de la estrucctura
 "Respuesta" :"D"
 Answer : [2]
 "}
-# Mensaje de encuesta enviada
+## Mensaje de encuesta enviada
 <!-- Blockquote -->
 > {"solicitud" : "Encuesta enviada exitosamente"}
 
-# Mensaje de error con la pagina
+## Mensaje de error con la pagina
 <!-- Blockquote -->
 > {"code : "500",
 "message": "El servidor esta sufriendo problemas",
 
-# Mensaje de error con encuestas no encontradas
+## Mensaje de error con encuestas no encontradas
 <!-- Blockquote -->
 > {"code : "404",
 "message": "Pagina no encontrada",
 
-# Mensaje de error con solicitud erronea
+## Mensaje de error con solicitud erronea
 <!-- Blockquote -->
 > {"code : "400",
 "message": "Solicitud Incorrecta",
@@ -102,15 +102,15 @@ Answer : [2]
 
 Una vez que se tengan las consultas y los mensajes de la pagina se deberan  implentar las estructuras de las rutas del proyecto
 
-# Implementación de rutas para los recursos
-# Ejemplo de consulta de formularios.
+## Implementación de rutas para los recursos
+## Ejemplo de consulta de formularios.
 GET /URL-FORULY/encuesta
 {tittle:"Encuesta ",
 fechaini:"04/07/2021,
 fechafin:"05/07/2021",
 ID:1
 }
-# Ejemplo de datos de una respuestas de preguntas de opcion multible
+## Ejemplo de datos de una respuestas de preguntas de opcion multible
 GET/URL-FORMULY/encuesta/1
 {
 respuestas :
@@ -121,13 +121,13 @@ respuestas :
  2,
  1]
 }
-# Ejemplo de datos de una respuesta abierta
+## Ejemplo de datos de una respuesta abierta
 GET/URL-FORMULY/encuesta/1
 {
 respuesta :
  [  Ejempo de respuesta abierta]
 }
-# Consulta de datos de usario
+## Consulta de datos de usario
 GET/URL-FORMULY/encuesta/1
 {
  {"username" : "Juan Perez",
@@ -136,3 +136,15 @@ GET/URL-FORMULY/encuesta/1
  "Genero" :"Hombre",
  "Email" :  "estenoesunbait@bait.com"}
 }
+```
+GET/URL-FORMULY/encuesta/1
+{
+ {"username" : "Juan Perez",
+ "Fecha de inicio" : "02/07/2021",
+ "Edad" :"21",
+ "Genero" :"Hombre",
+ "Email" :  "estenoesunbait@bait.com"}
+}
+```
+
+#
