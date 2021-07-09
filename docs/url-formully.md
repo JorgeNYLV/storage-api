@@ -367,14 +367,11 @@ En esta tabla se creon las rutas de las estructuras de los formatos de py
 
 
 ##  Datos de la informacion de usarios y de las encuestas que han contestado
+Esta ruta almacena los doatos de todos las encuestas, id, usarios y su inforacion
 | Path                  | Descripción |
 | --------------------- | ----------- |
-| Commit de rutas py | 70d70f91083316110cedcafd7e6428fd0e050d5d|
+| Commit de rutas py | 96e133ce32b0aa6fa709d58506994f429255436a|
 
-##
-| Path                  | Descripción |
-| --------------------- | ----------- |
-| Commit de rutas py | 70d70f91083316110cedcafd7e6428fd0e050d5d|
 ## Crear mock ups, de las vistas que desean implementar, utilizando MoqUps
 Aqui se creo una nueva carpeta en la ruta  ```/docs/assets``` en donde esta muestran la estructura que se desea que tenga la pagina, al ser imagenes de dmostracion se agregaron pocos datos en el caso de las preguntas.
 ![Imagen de formato de encuesta](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-01-encuesta%20formato.png)
