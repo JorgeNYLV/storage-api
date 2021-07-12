@@ -386,7 +386,10 @@ Aqui se creo una nueva carpeta en la ruta  ```/docs/assets``` en donde esta mues
 ![Imagen de edicion de encuestas](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-03-tabla%20de%20consulta%20y%20edicion%20de%20encuestas.png)
 
 - La parte de consulta de datos tendra la opciones de buscar lass encuestas por fecha que fueron contestadas, asi como la opcion de editar preguntas y respuestas, asi como eliminar las encuestas.
+- La parte de edicion mostrara las preguntas como se ve en la primera imagen nonmas que esta podra borrar o agregar tecto.
 
 ![Imagen de Consulta de usuarios](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-04-tabla%20de%20consulta%20de%20usarios%20que%20contestaron%20una%20encuesta.png)
 
 - En esta seccion se muestra los usarios que reposndieron una encuesta y esta mostrar las opciones de vizualizar las respuestas que contestaron o eliminar sus respuestas.
+
+Una vez ya planteada la idea del diseño ya se empezara con la parte de progrmar cada una de las estrructura como se propuso en las imagenes previamente mostradas.
