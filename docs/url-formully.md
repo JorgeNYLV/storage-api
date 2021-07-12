@@ -372,6 +372,6 @@ En esta imagen se muestra la estructura que llevaran las preguntas asi como van 
 ![Imagen de formato de encuesta](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-02-estructura%20de%20encuesta.png)
 El ingreso de datos del usario sera basicamente igual, ya que este debera de ingresar sus datos basicos y esta encuesta tendra la fecha y el ID de la encuesta pero estos ultimos no seran modificables para el usario.
 ![Imagen de edicion de encuestas](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-03-tabla%20de%20consulta%20y%20edicion%20de%20encuestas.png)
-La parte de consulta de datos tendra la opciones de buscar lass encuestas por fecha que fueron contestadas, asi como la opcion de editar preguntas y respuestas, asi como eliminar las encuestas.
+ ```La parte de consulta de datos tendra la opciones de buscar lass encuestas por fecha que fueron contestadas, asi como la opcion de editar preguntas y respuestas, asi como eliminar las encuestas. ```
 ![Imagen de Consulta de usuarios](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-04-tabla%20de%20consulta%20de%20usarios%20que%20contestaron%20una%20encuesta.png)
-En esta seccion se muestra los usarios que reposndieron una encuesta y esta mostrar las opciones de vizualizar las respuestas que contestaron o eliminar sus respuestas.
+ ```En esta seccion se muestra los usarios que reposndieron una encuesta y esta mostrar las opciones de vizualizar las respuestas que contestaron o eliminar sus respuestas. ```
