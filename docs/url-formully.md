@@ -352,7 +352,7 @@ Date:   Thu Jun 24 19:44:23 2021 -0700
 # Computo en la nube
 
 ## Crear un fork del proyecto storage-api
-En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono para empezar a trabajar
+En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono para empezar a trabajar y estructurar el documento y poder tener avances con el diseño del proyecto.
 | Path                  | Descripción |
 | --------------------- | ----------- |
 | archivo original  | 8c9c250a11ab0ac5c2b83ceb07cc5ec8dc1560f7           |
@@ -367,7 +367,7 @@ En esta tabla se creon las rutas de las estructuras de los formatos de py
 
 
 ##  Datos de la informacion de usarios y de las encuestas que han contestado
-Esta ruta almacena los doatos de todos las encuestas, id, usarios y su inforacion
+Esta ruta almacena los doatos de todos las encuestas, id, usarios y su inforacion, para luego ser conultada y poder editarla o eliminarla segun lo que se dese hacer.
 | Path                  | Descripción |
 | --------------------- | ----------- |
 | Commit de rutas py | 96e133ce32b0aa6fa709d58506994f429255436a|
