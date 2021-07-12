@@ -55,7 +55,7 @@ Al ser un formulario se eben de tener un acceso a la inforacion de los formulari
 * Preguntas Abiertas
 * Preguntas Cerradas
 
-Una vez planteada todos los datos de la estructura
+Una vez planteada todos los datos de la estructura, se crearan la estructura en codigo mostrando ejeplos de consulta de informacion de posibles consultas.
 
 ## Estructuras de solicitud y respuesta
 
