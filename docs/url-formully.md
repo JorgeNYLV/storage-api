@@ -13,7 +13,7 @@ Este proyecto forzozamente debe de estar conectada a internet para poder recolec
 | Path                  | Descripción |
 | --------------------- | ----------- |
 | /url/encuesta.py       |Este archivo se encargara de almacenar toda la informacion ingresada en las casillas, {"username": "UserName","Edad":"edad","Email":"emailexample","genero":"gener","fechaini":"fecha de inicio","fechafin":"fecha de final"|
-| /url/respuestas.py         |este archivo alamacenara las respuestas del formulario |
+| /url/Consulta.py         |este archivo alamacenara las respuestas del formulario |
 | /url/send.py             |Este archivo ejecutara la validacion de todos los datos que fueron ingresados en el formulario.             |
 | /url/id.py         |este archivo tendra el ID de la encuesta |
 
@@ -107,51 +107,25 @@ Una vez que se tengan las consultas y los mensajes de la pagina se deberan  impl
 ## Implementación de rutas para los recursos
 ## Ejemplo de consulta de formularios.
 En esta seccion se da un ejemplo de como se consutaria el tipo de encuesta con su nombre, fecha y el ID.
-```
+
 GET /URL-FORULY/encuesta
-{tittle:"Encuesta ",
-fechaini:"04/07/2021,
-fechafin:"05/07/2021",
-ID:1
-}
-```
+- Muestra las encuestas que tiene el sistema
+- muesta la informacion recientemente enviada
+-  Regresa un mensaje de fallo si no se encuentran encuestas
 ## Ejemplo de datos de una respuestas de preguntas de opcion multible
 En esta secccion se da un ejemplo de como se consultaria todas las respuestas de la preguntas de opcion multiple.
-```
+
 GET/URL-FORMULY/encuesta/1
-{
-respuestas :
- [0,
- 1,
- 3,
- 0,
- 2,
- 1]
-}
-```
-## Ejemplo de datos de una respuesta abierta
-En esta seccion se da un ejemplo de como se consultario una o las respuestas de una pregunta abierta.
-```
-GET/URL-FORMULY/encuesta/1
-{
-respuesta :
- [  Ejemplo de respuesta abierta]
-}
-```
+- Muestra las repuestas de un usuario en el caso de preguntas de opcion multiple  
+- Regresa un error en caso de que no se encuentren respuestas
+
+
 ## Consulta de datos de usario
 En esta seccion se van a vizualizar los datos del usario que realizo la encuesta, se vera sus datos principales y tambie la fecha en la que la encuesta inicio y la fecha en la que va a expirar.
-```
-GET/URL-FORMULY/encuesta/1
-{
- {"username" : "Juan Perez",
- "Fecha de inicio" : "02/07/2021",
- "Fecha Final" : 05/07/2021",
- "Edad" :"21",
- "Genero" :"Hombre",
- "Email" :  "estenoesunbait@bait.com"}
-}
-```
 
+GET/URL-FORMULY/encuesta/1
+- Muestra los datos del usuario y la encuesta que realizo, asi como el id de su encuesta
+- Regresa un mensaje de error en caso de no encontrar al usario o id especifico
 # Historial de git
 Este es el historial de todos los commit que se hicieron en la archivo desde que se hizo el fork, aqui vienen los datos de quien hizo el commit y la fecha.
 ```
