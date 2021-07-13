@@ -123,9 +123,14 @@ GET/URL-FORMULY/encuesta/1
 ## Consulta de datos de usario
 En esta seccion se van a vizualizar los datos del usario que realizo la encuesta, se vera sus datos principales y tambie la fecha en la que la encuesta inicio y la fecha en la que va a expirar.
 
-GET/URL-FORMULY/encuesta/1
+GET/URL-FORMULY/encuesta/User
 - Muestra los datos del usuario y la encuesta que realizo, asi como el id de su encuesta
 - Regresa un mensaje de error en caso de no encontrar al usario o id especifico
+
+GET/URL-FORMULY/encuesta/delete
+- Muestra unmensaje de que una encuesta a sido borrada o tambien de que las respuestas de un usario fueron borradas
+- Regresa un error en caso de no encontrar una encuesta o usario
+
 # Historial de git
 Este es el historial de todos los commit que se hicieron en la archivo desde que se hizo el fork, aqui vienen los datos de quien hizo el commit y la fecha.
 ```
