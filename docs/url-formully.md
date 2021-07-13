@@ -14,8 +14,8 @@ Este proyecto forzozamente debe de estar conectada a internet para poder recolec
 | --------------------- | ----------- |
 | /url/encuesta.py       |Este archivo se encargara de almacenar toda la informacion ingresada en las casillas, {"username": "UserName","Edad":"edad","Email":"emailexample","genero":"gener","fechaini":"fecha de inicio","fechafin":"fecha de final"|
 | /url/Consulta.py         |este archivo alamacenara las respuestas del formulario |
-| /url/send.py             |Este archivo ejecutara la validacion de todos los datos que fueron ingresados en el formulario.             |
-| /url/id.py         |este archivo tendra el ID de la encuesta |
+| /url/encuesta/user.py             |Este archivo ejecutara guarf¿dara los datos del usario que realizo la encuesta.             |
+| /url/encuesta/id.py         |este archivo tendra el ID de la encuesta |
 
 
 Al ser un formulario se eben de tener un acceso a la inforacion de los formularios que sean contestados, ya que es necesario saber que datos y quien esta contestando dichos formularios.
@@ -135,59 +135,36 @@ GET/URL-FORMULY/encuesta/delete
 Este es el historial de todos los commit que se hicieron en la archivo desde que se hizo el fork, aqui vienen los datos de quien hizo el commit y la fecha.
 ```
 
-commit 7906531f1e64fec8a287bb194a3fc85e261eb6aa (HEAD -> master, github/master)
+commit 78c4025c5051ceaac5cb011f438e74ae638ef229
 Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Thu Jul 8 07:47:52 2021 -0700
+Date:   Mon Jul 12 14:47:43 2021 -0700
 
-    Avance
+    Modificacion de descripiones
 
-commit 50c8f2e4a8d8803f2c9eed3239e1ad559398439e
+commit 233a275afab174dc60b8d3c45730ced1b7f6a004
 Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jul 6 17:25:21 2021 -0700
+Date:   Mon Jul 12 14:43:51 2021 -0700
 
-    estructura
+    Agregacion de documento de consulta con datos
 
-commit 9b7dc8f9c614d4cd831b798a94abd72d2fbc15db
+commit d1fcb71b4ed43e7ff3e40d39d19febe88010a5dc
 Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jul 6 11:06:41 2021 -0700
+Date:   Mon Jul 12 14:41:39 2021 -0700
 
-    Avance
+    Correcion de mensajes de error
 
-commit 841b4d431be09ef8a02e0bd81ff4578e3412cd52
+commit a92515de5483707db2223d85a47bdd802f5f10e4
 Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jul 6 10:12:50 2021 -0700
+Date:   Mon Jul 12 13:40:10 2021 -0700
 
-    Avance minimo
+    Modificacion de descripciones en algunas tablas.
 
-commit 76304189563bed5ef5a32ee22445e6a30562557e
+commit ea56b20be9480c44517424537114eb0be7c7997e
 Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Mon Jul 5 17:21:02 2021 -0700
+Date:   Mon Jul 12 09:00:00 2021 -0700
 
-    Avance
+    Correccion de descripciones de las imagenes
 
-commit 1a7198b3d9912ef45f38096a57493a3ec90f64a2
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Mon Jul 5 17:11:59 2021 -0700
-
-    Avance
-
-commit 3a23ad42bfb04981bc05dd73d7fbc23cbcd33298
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Sun Jul 4 16:13:42 2021 -0700
-
-    Avence
-
-commit 5c21721df389adfdacabf3bc41455b9e9ba26b14
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Fri Jul 2 09:49:07 2021 -0700
-
-    Avance 3
-
-commit 1804db6051f19207d61cb1d08e416a399564b18f
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Fri Jul 2 08:41:20 2021 -0700
-
-    Avance 2
 
 commit 49c0790cd98d2bf03a6c8d197964b0f9eab15535
 Author: jorge garcia <jorgearmando1999@hotmail.com>
@@ -195,29 +172,6 @@ Date:   Thu Jul 1 12:17:23 2021 -0700
 
     Avance de estructuras de error
 
-commit d0788687bf3fc6961db58d0c1ed9649780e611d6
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Thu Jul 1 08:09:32 2021 -0700
-
-    Prueba 3
-
-commit 44346131a05e2ab0d9d51c04f83daf2d36e94999
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Thu Jul 1 08:08:34 2021 -0700
-
-    Avance 2
-
-commit 1d49adc22c3642c4f45c546d6f89c32db43b38fe
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Thu Jul 1 08:05:06 2021 -0700
-
-    Avance todo chido
-
-commit 2aab4385b10fb2ab095a229fa4a4d108d041cea9
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Wed Jun 30 14:55:48 2021 -0700
-
-    Avance de documento 1.1
 
 commit b6cf3677d520428415f8488f51252dbcfcb9c12f
 Author: jorge garcia <jorgearmando1999@hotmail.com>
@@ -225,17 +179,6 @@ Date:   Wed Jun 30 14:20:21 2021 -0700
 
     Avance de funcionamiento del trabajo
 
-commit 700c0f09df1a3789e6dc22d56392e4453643f65c
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Wed Jun 30 14:08:43 2021 -0700
-
-    Actualizacion del proyecto
-
-commit 0e404828e43f306c56c6445f71c09db96a8dda78
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 21:06:34 2021 -0700
-
-    Avance 1 de operaciones
 
 commit 70d70f91083316110cedcafd7e6428fd0e050d5d
 Author: jorge garcia <jorgearmando1999@hotmail.com>
@@ -243,77 +186,6 @@ Date:   Tue Jun 29 09:34:08 2021 -0700
 
     Estructura de la pagina y modo de uso version 10.1
 
-commit 98fe86de73c185ae058d720d3cb083813735077a
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 09:26:13 2021 -0700
-
-    Avance de pagina 2
-
-commit 6585d1664797ea30051cda514a5adf28bc6cf270
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 09:24:30 2021 -0700
-
-    Prueba 6
-
-commit fc4071f3395a7f3f44da6c8f28eb1d22d7940068
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 09:22:29 2021 -0700
-
-    Prueba 5
-
-commit 913c921bc726e5117c08937cf04bc1a34cd91fb4
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 09:15:40 2021 -0700
-
-    Avance de trabajo
-
-commit 8d95a5331f32c2c4e460fd81d1d22e88d7cfce01
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 08:16:26 2021 -0700
-
-    Prueba 5
-
-commit e33ccd3494a1e5af429db589b495f0fcaf99c4be
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 08:15:55 2021 -0700
-
-    Prueba 4
-
-commit a014ff33a6da5b6deb62fa5f02c451b9e725b7eb
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 08:14:45 2021 -0700
-
-    Prueba 3
-
-commit c47465af4dd570a2a5ee942f151af32992aaa958
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 08:07:29 2021 -0700
-
-    Prueba 2
-
-commit 0ee04b7167faf2877fa73777e976045ff7632196
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 08:05:19 2021 -0700
-
-    Avance de la estructura de formulario
-
-commit 60027a29a1c71a6db6e638806dce6ad3c70c664b
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Tue Jun 29 07:57:34 2021 -0700
-
-    Avance
-
-commit 7591dc6d4fef1b7260ba3e6fdd93d05202211a4d
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Mon Jun 28 19:32:14 2021 -0700
-
-    Avence del diseño
-
-commit e7d0c197e023eb5eaf74f3f9aa4be8b7ef702241
-Author: jorge garcia <jorgearmando1999@hotmail.com>
-Date:   Mon Jun 28 18:52:34 2021 -0700
-
-    Prueba de comit
 
 commit 3acb89e18b91d49fc26516e725ce178b270fe08e
 Merge: 66b9c7e 812228b
