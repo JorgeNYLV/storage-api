@@ -76,10 +76,10 @@ Una vez planteada todos los datos de la estructura, se crearan la estructura en 
 ## Ejemplo de estructura de pregunta de opcion multiple
 <!-- Blockquote -->
 > {"Prgunta " : "¿Cual es la opcion correcta?",
-"Respuesta" :"A",
-"Respuesta" :"B",
-"Respuesta" :"C",
-"Respuesta" :"D"
+"Opcion_1" :"A",
+"Opcion_2" :"B",
+"Opcion_3" :"C",
+"Opcion_4" :"D"
 Answer : [2]
 "}
 ## Mensaje de encuesta enviada
