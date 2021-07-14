@@ -203,7 +203,7 @@ Date:   Thu Jun 24 19:44:23 2021 -0700
 # Computo en la nube
 
 ## Crear un fork del proyecto storage-api
-<<<<<<< HEAD
+
 En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono para empezar a trabajar
 =======
 En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono para empezar a trabajar y estructurar el documento y poder tener avances con el diseño del proyecto.
