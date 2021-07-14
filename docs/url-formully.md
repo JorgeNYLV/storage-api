@@ -76,17 +76,10 @@ Una vez planteada todos los datos de la estructura, se crearan la estructura en 
 ## Ejemplo de estructura de pregunta de opcion multiple
 <!-- Blockquote -->
 > {"Prgunta " : "¿Cual es la opcion correcta?",
-<<<<<<< HEAD
-"Respuesta" :"A",
-"Respuesta" :"B",
-"Respuesta" :"C",
-"Respuesta" :"D"
-=======
 "Opcion_1" :"A",
 "Opcion_2" :"B",
 "Opcion_3" :"C",
 "Opcion_4" :"D"
->>>>>>> 14ea27c0d1077ebf523d63a292b4e38cda42fdbd
 Answer : [2]
 "}
 ## Mensaje de encuesta enviada
@@ -214,7 +207,6 @@ Date:   Thu Jun 24 19:44:23 2021 -0700
 En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono para empezar a trabajar
 =======
 En esta tabla se creo el fork del proyecto de la carpeta que se nos proporciono para empezar a trabajar y estructurar el documento y poder tener avances con el diseño del proyecto.
->>>>>>> 14ea27c0d1077ebf523d63a292b4e38cda42fdbd
 | Path                  | Descripción |
 | --------------------- | ----------- |
 | archivo original  | 8c9c250a11ab0ac5c2b83ceb07cc5ec8dc1560f7           |
@@ -227,8 +219,8 @@ En esta tabla se creon las rutas de las estructuras de los formatos de py
 | --------------------- | ----------- |
 | Commit de rutas py | 70d70f91083316110cedcafd7e6428fd0e050d5d|
 
-<<<<<<< HEAD
-=======
+
+
 
 ##  Datos de la informacion de usarios y de las encuestas que han contestado
 Esta ruta almacena los doatos de todos las encuestas, id, usarios y su inforacion, para luego ser conultada y poder editarla o eliminarla segun lo que se dese hacer.
@@ -236,7 +228,7 @@ Esta ruta almacena los doatos de todos las encuestas, id, usarios y su inforacio
 | --------------------- | ----------- |
 | Commit de rutas py | 96e133ce32b0aa6fa709d58506994f429255436a|
 
->>>>>>> 14ea27c0d1077ebf523d63a292b4e38cda42fdbd
+
 ## Crear mock ups, de las vistas que desean implementar, utilizando MoqUps
 Aqui se creo una nueva carpeta en la ruta  ```/docs/assets``` en donde esta muestran la estructura que se desea que tenga la pagina, al ser imagenes de dmostracion se agregaron pocos datos en el caso de las preguntas.
 
