@@ -219,13 +219,13 @@ En esta tabla se creon las rutas de las estructuras de los formatos de py
 ## Crear mock ups, de las vistas que desean implementar, utilizando MoqUps
 Aqui se creo una nueva carpeta en la ruta  ```/docs/assets``` en donde esta muestran la estructura que se desea que tenga la pagina, al ser imagenes de dmostracion se agregaron pocos datos en el caso de las preguntas.
 
-![Imagen de formato de encuesta](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-01-encuesta%20formato.png)
-
-- En esta imagen se muestra la estructura que llevaran las preguntas asi como van a estar configuradas para responder.
-
 ![Imagen de formato de encuesta](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-02-estructura%20de%20encuesta.png)
 
 - El ingreso de datos del usario sera basicamente igual, ya que este debera de ingresar sus datos basicos y esta encuesta tendra la fecha y el ID de la encuesta pero estos ultimos no seran modificables para el usario.
+
+![Imagen de formato de encuesta](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-01-encuesta%20formato.png)
+
+- En esta imagen se muestra la estructura que llevaran las preguntas asi como van a estar configuradas para responder.
 
 ![Imagen de edicion de encuestas](https://github.com/JorgeNYLV/storage-api/blob/master/docs/assets/slug-03-tabla%20de%20consulta%20y%20edicion%20de%20encuestas.png)
 
