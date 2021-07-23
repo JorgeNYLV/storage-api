@@ -12,10 +12,12 @@ import bottle
 import routes.auth
 import routes.storage
 import models.base
+import routes.url_messa
 
 app = bottle.Bottle()
 
 app.mount("/auth", routes.auth.app)
+app.mount("/url_messa", routes.url_messa.app)
 app.mount("/storage", routes.storage.app)
 
 
