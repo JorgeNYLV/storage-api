@@ -6,6 +6,11 @@ from time import time
 from modules.auth import auth_required
 from modules.storage import store_string, get_storage_file
 from models.example import ExampleRecord
+
+import bottle
+from modules.bottles import BottleJson
+from modules.data_formuly import add_usuario
+
 #app = BottleJson()
 app = BottleJson()
 @app.get("/")
@@ -15,14 +20,36 @@ def index():
     print(payload.dict)
     raise bottle.HTTPError(501, 'Error')
 
-@app.get("/encuesta/<tipo_id>")
-def get_tipo(tipo_id):
-    print(tipo_id)
-    raise bottle.HTTPError(501, 'Error')
+#@app.get("/encuesta/<tipo_id>")
+#def get_tipo(tipo_id):
+    #print(tipo_id)
+    #raise bottle.HTTPError(501, 'Error')
 
     #bottle.response.status = 404
     #bottle.response.content_type = "application/json"
     #return dict(code= 404, message = "Bad Request ")
+
+@app.get("/add_usuario/add")
+def bar(*args, **kwargs):
+    payload = bottle.request.query
+    print(payload.dict)
+     try:
+
+        username = str(payload['username'])
+        genero = str(payload['genero'])
+        edad = str(payload['edad'])
+        fecha = str(payload['fecha'])
+        year, month, date = [int(x) for x in release_date.split("-")]
+        correo = str(payload['correo'])
+        ID = str(payload['ID'])
+        print("Datos Aceptados")
+        respuesta = add_usuario(**payload)
+        raise bottle.HTTPError(201)
+    except:
+        print("Datos incorrecros")
+        raise bottle.HTTPError(400)
+    raise bottle.HTTPError(500)
+
 
 @app.get("/consulta/<nombre_us>")
 def get_all_info(nombre_us):

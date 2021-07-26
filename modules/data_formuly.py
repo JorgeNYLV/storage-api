@@ -5,8 +5,8 @@ from os import environ
 from pathlib import Path
 import datetime as dt
 
-encuestas[]
-def get_encuesta_usuario(username,edad,genero,fecha,correo,id):
+
+def add_usuario(username= None,edad= None,genero= None,fecha= None,correo= None,id= 1):
     encuestas = {
     """
     Funcion para estructura de consulta de datos de un usario.
@@ -31,7 +31,7 @@ def get_encuesta_usuario(username,edad,genero,fecha,correo,id):
 
 
     Exception: Usuario no encontrado
-    """
+
     "username" : username,
     "genero" : genero,
     "fecha" :fecha ,
@@ -39,8 +39,10 @@ def get_encuesta_usuario(username,edad,genero,fecha,correo,id):
     "correo" : correo,
     "ID" : id,
     }
-encuestas.append(encuestas)
-return json.dumps(encuestas)
+    """
+print("Datos de usario")
+    print(username,edad,genero,fecha,correo,id)
+    print("Capturdo")
 
 
 def get_encuesta_fecha(encuesta,fecha){
