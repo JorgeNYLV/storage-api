@@ -5,7 +5,6 @@ bottle.py and intended to be used as a Google Cloud Run
 service.
 
 """
-
 import sys
 import datetime
 import bottle
@@ -14,10 +13,12 @@ import routes.storage
 import models.base
 import routes.url_messa
 
+
 app = bottle.Bottle()
 
 app.mount("/auth", routes.auth.app)
-app.mount("/url_messa", routes.url_messa.app)
+app.mount("/store", routes.url_messa.app)
+app.mount("/url", routes.url_messa.app)
 app.mount("/storage", routes.storage.app)
 
 

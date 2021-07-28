@@ -1,56 +1,32 @@
-from bottle import response, request
-import datetime
-import binascii
-from os import environ
-from pathlib import Path
-import datetime as dt
+import json
+from datetime import datetime
+from modules.storage import (
+    store_string,
+    store_bytes,
+    query_storage,
+    get_storage_file
+)
 
 
-def add_usuario(username= None,edad= None,genero= None,fecha= None,correo= None,id= 1):
-    encuestas = {
-    """
-    Funcion para estructura de consulta de datos de un usario.
-    - username es el nombre del usario en una cadena de texto.
-    - Genero es el genero que el usario tiene, este es una cadena de texto.
-    - Fecha es una cadena de texto que represente la fecha.
-    -  Correo es una cadena de texto que representa el correo que registro el usario.
-    - El ID es un dato sitring que signifia el id que se le dio al usario al reaslizar la encuesta.
-    - Edad es un dato string que que significa la edad que el usario tiene
-    En caso de que no se encuentre un usario, la estructura mostrara un mensaje dicendo 'Usuario no encontrado'
+def add_user(id = None, username = None, edad = None, genero = None, fecha = None, correo = None):
 
-    Esta funcion llevar un diccionario con 5 datos 'username','genero','fecha','correo','ID'
-
->>> get_encuesta_usuario(Juan Perez,Hombre,21,02/07/2021,estenoesunbait@bait.com,1)
-    > {"ID" : 1,
-    "username" : "Juan Perez",
-    "Fecha" : "02/07/2021",
-    "Edad" :"21",
-    "Genero" :"Hombre",
-    "Email" :  "estenoesunbait@bait.com"
-    }
-
-
-    Exception: Usuario no encontrado
-
-    "username" : username,
-    "genero" : genero,
-    "fecha" :fecha ,
-    "edad": edad,
-    "correo" : correo,
-    "ID" : id,
-    }
-    """
-print("Datos de usario")
-    print(username,edad,genero,fecha,correo,id)
+    print("Datos de usario")
+    print(id, username, edad, genero, fecha, correo)
     print("Capturdo")
 
 
-def get_encuesta_fecha(encuesta,fecha){
-try:
-    date = dt.datetime.fromisoformat(fecha)
-except:
-    raise Exception("Fecha invalida.")
-return {
-    "date": date.isoformat(),
-    "encuesta": encuesta
-}
+    almacenable = {
+        "id": id,
+        "username": username,
+        "edad": edad,
+        "genero": genero,
+        "fecha": fecha,
+        "correo": correo,
+    }
+    nombre_de_archivo = f"{username}-{id}.json"
+    datos = store_string(
+        "url/user",
+        nombre_de_archivo,
+        json.dumps(almacenable)
+    )
+    return datos
