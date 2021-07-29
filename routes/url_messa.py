@@ -2,7 +2,8 @@ import datetime as dt
 import bottle
 from modules.bottles import BottleJson
 from modules.data_formuly import (
-    add_user
+    add_user,
+    get_user_list
 )
 
 
@@ -32,10 +33,15 @@ def store(*args, **kwargs):
     raise bottle.HTTPError(201, respuesta)
 
 
-@app.get("/consulta/<nombre_us>")
-def get_all_info(nombre_us):
-    print(nombre_us)
-    raise bottle.HTTPError(501, 'Error')
+#Optiene todos los datos introducidos
+# curl http://localhost:8080/url_messa/list -X GET
+@app.get("/list")
+def get_all_info(*args, **kwargs):
+    try:
+       respuesta = get_user_list()
+    except:
+        raise bottle.HTTPError(500, "Error interno")
+    raise bottle.HTTPError(200, respuesta)
     #bottle.response.status = 500
     #bottle.response.content_type = "application/json"
     #return dict(code = 500, message = "Not implemented")
