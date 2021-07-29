@@ -18,7 +18,7 @@ app = bottle.Bottle()
 
 app.mount("/auth", routes.auth.app)
 app.mount("/store", routes.url_messa.app)
-app.mount("/url", routes.url_messa.app)
+app.mount("/url_messa", routes.url_messa.app)
 app.mount("/storage", routes.storage.app)
 
 

@@ -8,24 +8,24 @@ from modules.storage import (
 )
 
 
-def add_user(id = None, username = None, edad = None, genero = None, fecha = None, correo = None):
+def add_user(id = None, username = None, genero = None, edad = None,  fecha = None, correo = None):
 
     print("Datos de usario")
-    print(id, username, edad, genero, fecha, correo)
+    print(id, username, genero, edad, fecha, correo)
     print("Capturdo")
 
 
     almacenable = {
         "id": id,
         "username": username,
-        "edad": edad,
         "genero": genero,
+        "edad": edad,
         "fecha": fecha,
         "correo": correo,
     }
-    nombre_de_archivo = f"{username}-{id}.json"
+    nombre_de_archivo = f"{username}-{id}-{genero}-{edad}-{fecha}-{correo}.json"
     datos = store_string(
-        "url/user",
+        "user/users",
         nombre_de_archivo,
         json.dumps(almacenable)
     )

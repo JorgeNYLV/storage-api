@@ -8,7 +8,8 @@ from modules.data_formuly import (
 
 app = BottleJson()
 
-
+#prueba de post
+#curl http://localhost:8080/url_messa/store  -X POST -H 'Content-Type: application/json'  -d '{"id" : "4" , "username" : "eduardo" , "genero" : "hombre" , "edad" : "10" , "fecha":"2021-01-01" , "correo" : "estenoesunbait@bait.com"}'
 
 @app.post("/store")
 def store(*args, **kwargs):
@@ -27,7 +28,7 @@ def store(*args, **kwargs):
         print("Almost done")
     except:
         print("Datos incorrecros")
-        raise bottle.HTTPError(400, "datos invalidos")
+        raise bottle.HTTPError(405, "datos invalidos")
     raise bottle.HTTPError(201, respuesta)
 
 
