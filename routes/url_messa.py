@@ -3,7 +3,8 @@ import bottle
 from modules.bottles import BottleJson
 from modules.data_formuly import (
     add_user,
-    get_user_list
+    get_user_list,
+    get_id_details
 )
 
 
@@ -46,13 +47,17 @@ def get_all_info(*args, **kwargs):
     #bottle.response.content_type = "application/json"
     #return dict(code = 500, message = "Not implemented")
 
-@app.get("/historial/<tipos_id>")
-def get_info_by_sn(tipos_id):
-    print(tipos_id)
-    raise bottle.HTTPError(501, 'Error')
+@app.get("/<id>")
+def get_id(*args,id=None, **kwargs):
+    try:
+        respuesta = get_id_details(id = id)
+    except:
+        raise bottle.HTTPError(400)
+    raise bottle.HTTPError(200, respuesta)
     #bottle.response.status = 400
     #bottle.response.content_type = "application/json"
-    #return dict(code = 400, message = "Not found")
+    #return dict(code = 400, message = "Not found").
+
 @app.get("/User/<names_id>")
 def get_User(names_id):
     print(names_id)

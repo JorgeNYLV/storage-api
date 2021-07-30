@@ -30,10 +30,22 @@ def add_user(id = None, username = None, genero = None, edad = None,  fecha = No
         json.dumps(almacenable)
     )
     return datos
-    
+
 def get_user_list(users=None):
     query_result = query_storage(
         "user/users",
     )
     if users is None:
         return query_result["content"]
+
+def get_id_details(id=None):
+    query_result = query_storage(
+        "user/users",
+    )
+    if id is not None:
+        return [
+           r
+           for r in query_result["content"]
+           if id in r
+        ]
+    print("done")
