@@ -69,3 +69,15 @@ def add_encuesta(encuesta = None, id = None, pregunta_1 = None, pregunta_2 = Non
         json.dumps(almacenable)
     )
     return datos
+
+def get_encuesta(id = None, encuesta = None):
+    query_result = query_storage(
+        "enuesta/encuestas",
+    )
+    if id is not None:
+        return [
+           r
+           for r in query_result["content"]
+           if id in r
+        ]
+    print("Le sabes")

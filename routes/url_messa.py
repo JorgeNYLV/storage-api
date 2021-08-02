@@ -5,7 +5,8 @@ from modules.data_formuly import (
     add_user,
     get_user_list,
     get_id_details,
-    add_encuesta
+    add_encuesta,
+    get_encuesta
 )
 
 
@@ -60,7 +61,7 @@ def get_id(*args,id=None, **kwargs):
     #return dict(code = 400, message = "Not found").
 
 
-
+#Añade encuestas
 # curl http://localhost:8080/url_messa/4/encuesta -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'
 @app.post("/<id>/encuesta")
 def bar(*args, **kwargs):
@@ -78,3 +79,13 @@ def bar(*args, **kwargs):
         print("Datos invalidos")
         raise bottle.HTTPError(400)
     raise bottle.HTTPError(201, "Creaste una nueva encuesta")
+
+#Consulta las encuestas
+#curl http://localhost:8080/url_messa/4/encuestas -X GET
+@app.get("/<id>/encuestas")
+def get_encuestas(*args, id=None, **kwargs):
+    try:
+       respuesta = get_encuesta(id)
+    except:
+        raise bottle.HTTPError(500, "Error interno")
+    raise bottle.HTTPError(200, respuesta)
