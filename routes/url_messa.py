@@ -4,7 +4,8 @@ from modules.bottles import BottleJson
 from modules.data_formuly import (
     add_user,
     get_user_list,
-    get_id_details
+    get_id_details,
+    add_encuesta
 )
 
 
@@ -58,26 +59,22 @@ def get_id(*args,id=None, **kwargs):
     #bottle.response.content_type = "application/json"
     #return dict(code = 400, message = "Not found").
 
-@app.get("/User/<names_id>")
-def get_User(names_id):
-    print(names_id)
-    raise bottle.HTTPError(501, 'Error')
-    #bottle.response.status = 501
-    #bottle.response.content_type = "application/json"
-    #return dict(code = 501, message = "Not implemented")
 
-@app.get("/ID/tipo/<encuestas_id>")
-def get_ID(encuestas_id):
-    print(encuestas_id)
-    raise bottle.HTTPError(501, 'Error')
-    #bottle.response.status = 501
-    #bottle.response.content_type = "application/json"
-    #return dict(code = 501, message = "Not implemented")
 
-@app.get("/Delete/user/<tipo_id>")
-def get_delete(tipo_id):
-    print(tipo_id)
-    raise bottle.HTTPError(501, 'Error')
-    #bottle.response.status = 501
-    #bottle.response.content_type = "application/json"
-    #return dict(code = 501, message = "Not implemented")
+# curl http://localhost:8080/url_messa/4/encuesta -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'
+@app.post("/<id>/encuesta")
+def bar(*args, **kwargs):
+    payload = bottle.request.json
+    print(payload)
+    try:
+        id = str(payload['id'])
+        encuesta = str(payload['encuesta'])
+        pregunta_1= str(payload['pregunta_1'])
+        pregunta_2 = str(payload['pregunta_2'])
+        pregunta_3 = str(payload['pregunta_3'])
+        print("Datos validos")
+        respuesta = add_encuesta(**payload)
+    except:
+        print("Datos invalidos")
+        raise bottle.HTTPError(400)
+    raise bottle.HTTPError(201, "Creaste una nueva encuesta")
