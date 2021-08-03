@@ -102,3 +102,15 @@ def add_repuestas(encuesta = None, id = None, respuesta_1 = None, respuesta_2 = 
         json.dumps(almacenable)
     )
     return datos
+
+def get_answers(id = None, encuesta = None, respuesta_1 = None):
+    query_result = query_storage(
+        "enuesta/respuestas",
+    )
+    if id is not None:
+        return [
+           r
+           for r in query_result["content"]
+           if id in r
+        ]
+    print("Funciona 'hace un dab'")
