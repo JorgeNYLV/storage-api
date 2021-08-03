@@ -81,3 +81,24 @@ def get_encuesta(id = None, encuesta = None):
            if id in r
         ]
     print("Le sabes")
+
+
+def add_repuestas(encuesta = None, id = None, respuesta_1 = None, respuesta_2 = None, respuesta_3 = None):
+    print("Datos encuesta")
+    print(encuesta, id, respuesta_1, respuesta_2, respuesta_3)
+    print("Exito")
+
+    almacenable = {
+        "encuesta": encuesta,
+        "id": id,
+        "respuesta_1": respuesta_1,
+        "respuesta_2": respuesta_2,
+        "respuesta_3": respuesta_3,
+    }
+    nombre_de_archivo = f"{encuesta}-{id}-{respuesta_1}-{respuesta_2}-{respuesta_3}.json"
+    datos = store_string(
+        "enuesta/respuestas",
+        nombre_de_archivo,
+        json.dumps(almacenable)
+    )
+    return datos

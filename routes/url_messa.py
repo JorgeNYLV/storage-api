@@ -6,7 +6,8 @@ from modules.data_formuly import (
     get_user_list,
     get_id_details,
     add_encuesta,
-    get_encuesta
+    get_encuesta,
+    add_repuestas
 )
 
 
@@ -89,3 +90,22 @@ def get_encuestas(*args, id=None, **kwargs):
     except:
         raise bottle.HTTPError(500, "Error interno")
     raise bottle.HTTPError(200, respuesta)
+
+
+# curl http://localhost:8080/url_messa/4/comida/respuesta -X POST -H 'Content-Type: application/json' -d '{"id": "4", "encuesta": "comida", "respuesta_1": "no era bait", "respuesta_2": " soy una respuesta", "respuesta_3": "respuesta de bait"}'
+@app.post("/<id>/<encuesta>/respuesta")
+def bar(*args, **kwargs):
+    payload = bottle.request.json
+    print(payload)
+    try:
+        id = str(payload['id'])
+        encuesta = str(payload['encuesta'])
+        respuesta_1= str(payload['respuesta_1'])
+        respuesta_2 = str(payload['respuesta_2'])
+        respuesta_3 = str(payload['respuesta_3'])
+        print("Datos validos")
+        respuesta = add_repuestas(**payload)
+    except:
+        print("Datos invalidos")
+        raise bottle.HTTPError(400)
+    raise bottle.HTTPError(201, "Agregaste las respuestas :D")
