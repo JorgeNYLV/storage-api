@@ -10,13 +10,14 @@ import datetime
 import bottle
 import routes.auth
 import routes.storage
+import routes.example
 import models.base
 import routes.url_messa
-
 
 app = bottle.Bottle()
 
 app.mount("/auth", routes.auth.app)
+app.mount("/example", routes.example.app)
 app.mount("/store", routes.url_messa.app)
 app.mount("/url_messa", routes.url_messa.app)
 app.mount("/storage", routes.storage.app)
@@ -36,7 +37,8 @@ if __name__ == '__main__':
         if sys.argv[1] == 'db' and 'migrate' in sys.argv:
             print("Database Migration:")
             now_iso = datetime.datetime.utcnow().isoformat()
-            models.base.migrate_database(now_iso)
+            migration_name = now_iso
+            models.base.migrate_database(migration_name)
         else:
             error = True
     elif error:

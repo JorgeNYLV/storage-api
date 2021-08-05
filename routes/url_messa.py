@@ -8,7 +8,8 @@ from modules.data_formuly import (
     add_encuesta,
     get_encuesta,
     add_repuestas,
-    get_answers
+    get_answers,
+    update_encuestas
 )
 
 
@@ -83,14 +84,36 @@ def bar(*args, **kwargs):
     raise bottle.HTTPError(201, "Creaste una nueva encuesta")
 
 #Consulta las encuestas
-#curl http://localhost:8080/url_messa/4/encuestas -X GET
-@app.get("/<id>/encuestas")
-def get_encuestas(*args, id=None, **kwargs):
+#curl http://localhost:8080/url_messa/4/comida -X GET
+@app.get("/<id>/<encuesta>")
+def get_encuestas(*args, id=None, encuesta=None, **kwargs):
     try:
-       respuesta = get_encuesta(id)
+       respuesta = get_encuesta(id,encuesta)
     except:
         raise bottle.HTTPError(500, "Error interno")
     raise bottle.HTTPError(200, respuesta)
+    
+# Variable para modificar los las preguntas de las encuestas
+# curl http://localhost:8080/url_messa/4/comida -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'
+
+@app.post("/<id>/<encuesta>")
+def update_datos(*args, **kwargs):
+    payload = bottle.request.json
+    print(payload)
+    try:
+        id = str(payload['id'])
+        encuesta = str(payload['encuesta'])
+        pregunta_1= str(payload['pregunta_1'])
+        pregunta_2 = str(payload['pregunta_2'])
+        pregunta_3 = str(payload['pregunta_3'])
+        print("Datos validos")
+        respuesta = update_encuestas(**payload)
+        print(respuesta)
+        print("Almost done")
+    except:
+        print("Datos invalidos")
+        raise bottle.HTTPError(400, "Invalid data")
+    raise bottle.HTTPError(201, "La base de datos a sido actualizada")
 
 # Agrega las respuestas a la encuesta
 # curl http://localhost:8080/url_messa/4/comida/respuesta -X POST -H 'Content-Type: application/json' -d '{"id": "4", "encuesta": "comida", "respuesta_1": "no era bait", "respuesta_2": " soy una respuesta", "respuesta_3": "respuesta de bait"}'

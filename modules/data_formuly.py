@@ -80,7 +80,14 @@ def get_encuesta(id = None, encuesta = None):
            for r in query_result["content"]
            if id in r
         ]
-    print("Le sabes")
+        print("Le sabes")
+    if encuesta is not None:
+        return [
+           r
+           for r in query_result["content"]
+           if encuesta in r
+        ]
+        print("Le sabes")
 
 
 def add_repuestas(encuesta = None, id = None, respuesta_1 = None, respuesta_2 = None, respuesta_3 = None):
@@ -114,3 +121,24 @@ def get_answers(id = None, encuesta = None, respuesta_1 = None):
            if id in r
         ]
     print("Funciona 'hace un dab'")
+
+def update_encuestas(encuesta = None, id = None, pregunta_1 = None, pregunta_2 = None, pregunta_3 = None):
+    print("Datos encuesta")
+    print(encuesta, id, pregunta_1, pregunta_2, pregunta_3)
+    print("Exito")
+
+    almacenable = {
+        "encuesta": encuesta,
+        "id": id,
+        "pregunta_1": pregunta_1,
+        "pregunta_2": pregunta_2,
+        "pregunta_3": pregunta_3,
+    }
+    nombre_de_archivo = f"{encuesta}-{id}-{pregunta_1}-{pregunta_2}-{pregunta_3}.json"
+    datos = store_string(
+        "enuesta/encuestas",
+        nombre_de_archivo,
+        json.dumps(almacenable),
+        update=True
+    )
+    return datos
