@@ -92,7 +92,7 @@ def get_encuestas(*args, id=None, encuesta=None, **kwargs):
     except:
         raise bottle.HTTPError(500, "Error interno")
     raise bottle.HTTPError(200, respuesta)
-    
+
 # Variable para modificar los las preguntas de las encuestas
 # curl http://localhost:8080/url_messa/4/comida -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'
 
