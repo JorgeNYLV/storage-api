@@ -421,11 +421,12 @@ Aqui se creo una nueva carpeta en la ruta  ```/docs/assets``` en donde esta mues
 
 Una vez ya planteada la idea del diseño ya se empezara con la parte de progrmar cada una de las estrructura como se propuso en las imagenes previamente mostradas.
 
-## Casos de uso (curls, falta explicar y estructurar)
-* Curl para agregarlos datos de los usuarios
-* Curl para poder agregar preguntas mediande un id
-* Curl para poder agregar las respuestas de la encuestas
-* Curl para poder modificar la informacion de los usarios
-* curl para hacer consultas sobre los usarios
-* curl para hacer consultas sobre las preguntas
-* curl para hacer consultas sobre las respuestas
+# Casos de uso
+## Curl para agregarlos datos de los usuarios
+`<addr>` 
+## Curl para poder agregar preguntas mediande un id
+## Curl para poder agregar las respuestas de la encuestas
+## Curl para poder modificar la informacion de los usarios
+## curl para hacer consultas sobre los usarios
+## curl para hacer consultas sobre las preguntas
+## curl para hacer consultas sobre las respuestas
