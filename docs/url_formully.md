@@ -423,10 +423,16 @@ Una vez ya planteada la idea del diseño ya se empezara con la parte de progrmar
 
 # Casos de uso
 ## Curl para agregarlos datos de los usuarios
-`<addr>` 
+`<curl http://localhost:8080/url_messa/store  -X POST -H 'Content-Type: application/json'  -d '{"id" : "4" , "username" : "eduardo" , "genero" : "hombre" , "edad" : "10" , "fecha":"2021-01-01" , "correo" : "estenoesunbait@bait.com"}'>`
 ## Curl para poder agregar preguntas mediande un id
+`<curl http://localhost:8080/url_messa/4/encuesta -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'>`
 ## Curl para poder agregar las respuestas de la encuestas
+`<curl http://localhost:8080/url_messa/4/comida/respuesta -X POST -H 'Content-Type: application/json' -d '{"id": "4", "encuesta": "comida", "respuesta_1": "no era bait", "respuesta_2": " soy una respuesta", "respuesta_3": "respuesta de bait"}'>`
 ## Curl para poder modificar la informacion de los usarios
+`<curl http://localhost:8080/url_messa/4/comida -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'>`
 ## curl para hacer consultas sobre los usarios
+`<curl http://localhost:8080/url_messa/list -X GET>`
 ## curl para hacer consultas sobre las preguntas
+`<curl http://localhost:8080/url_messa/4/comida -X GET>`
 ## curl para hacer consultas sobre las respuestas
+`<curl http://localhost:8080/url_messa/4/comida/no_era_bait -X GET>` 
