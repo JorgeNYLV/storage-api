@@ -23,7 +23,7 @@ def add_user(id = None, username = None, genero = None, edad = None,  fecha = No
         "fecha": fecha,
         "correo": correo,
     }
-    nombre_de_archivo = f"{username}-{id}.json"
+    nombre_de_archivo = f"{username}-{id}-{edad}-{fecha}-{genero}-{correo}.json"
     datos = store_string(
         "user/users",
         nombre_de_archivo,
@@ -62,7 +62,7 @@ def add_encuesta(encuesta = None, id = None, pregunta_1 = None, pregunta_2 = Non
         "pregunta_2": pregunta_2,
         "pregunta_3": pregunta_3,
     }
-    nombre_de_archivo = f"{encuesta}-{id}.json"
+    nombre_de_archivo = f"{encuesta}-{id}-{id}-{id}-{id}.json"
     datos = store_string(
         "enuesta/encuestas",
         nombre_de_archivo,
@@ -102,7 +102,7 @@ def add_repuestas(encuesta = None, id = None, respuesta_1 = None, respuesta_2 = 
         "respuesta_2": respuesta_2,
         "respuesta_3": respuesta_3,
     }
-    nombre_de_archivo = f"{encuesta}-{id}.json"
+    nombre_de_archivo = f"{encuesta}-{id}-{respuesta_1}.json"
     datos = store_string(
         "enuesta/respuestas",
         nombre_de_archivo,

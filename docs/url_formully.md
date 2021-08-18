@@ -223,28 +223,43 @@ Una vez ya planteada la idea del diseño ya se empezara con la parte de progrmar
 ## Curl para agregarlos datos de los usuarios
 * El usario agregara su informacion basica para poder quedar registrado
   * Su informacion constara de su nombre, su genero, su edad la fecha y su correo.
-`<curl http://localhost:8080/url_messa/store  -X POST -H 'Content-Type: application/json'  -d '{"id" : "4" , "username" : "eduardo" , "genero" : "hombre" , "edad" : "10" , "fecha":"2021-01-01" , "correo" : "estenoesunbait@bait.com"}'>`
+
+```
+ curl http://localhost:8080/url_messa/store  -X POST -H 'Content-Type: application/json'  -d '{"id" : "4" , "username" : "eduardo" , "genero" : "hombre" , "edad" : "10" , "fecha":"2021-01-01" , "correo" : "estenoesunbait@bait.com"}'
+ ```
 ## Curl para poder agregar preguntas mediande un id
 * Esta seccion se encarga de agreegar las preguntas y el tema de la encuesta
   * Las preguntas tiene un formato abierto al igual queel nombre de la encuesta tambien se le debe de asignar un id
-`<curl http://localhost:8080/url_messa/4/encuesta -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'>`
+```
+ curl http://localhost:8080/url_messa/4/encuesta -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'
+ ```
 
 ## Curl para poder agregar las respuestas de la encuestas
 * En esta seccion se reponderan a las preguntas que se crearon, esto dependiendo el id
   * Esta tomara los datos del nombre de la encuesta y de su id como tambei las pregutas , pero essta vez seran renplasados por las respuestas
-`<curl http://localhost:8080/url_messa/4/comida/respuesta -X POST -H 'Content-Type: application/json' -d '{"id": "4", "encuesta": "comida", "respuesta_1": "no era bait", "respuesta_2": " soy una respuesta", "respuesta_3": "respuesta de bait"}'>`
+
+```
+curl http://localhost:8080/url_messa/4/comida/respuesta -X POST -H 'Content-Type: application/json' -d '{"id": "4", "encuesta": "comida", "respuesta_1": "no era bait", "respuesta_2": " soy una respuesta", "respuesta_3": "respuesta de bait" }'
+```
 
 ## curl para hacer consultas sobre los usarios
 * Las consultas se utilizaran para saber los usarios que han contestado y el id de la encuesta
-`<curl http://localhost:8080/url_messa/list -X GET>`
+```
+curl http://localhost:8080/url_messa/list -X GET
+```
 
 ## curl para hacer consultas sobre las preguntas
 * La consulta para saber cuantas encuestas se tinen y las id de estas mismas
-`<curl http://localhost:8080/url_messa/4/comida -X GET>`
+```
+curl http://localhost:8080/url_messa/4/comida -X GET
+```
 
 ## curl para hacer consultas sobre las respuestas
 * Tambien consultar todas las repuestas que se tienen de todas las encuestas que se tienen
-`<curl http://localhost:8080/url_messa/4/comida/no_era_bait -X GET>`
+
+```
+curl http://localhost:8080/url_messa/4/comida/no_era_bait -X GET
+```
 
 # Planeacion del frontend
 
