@@ -105,9 +105,10 @@ En esta seccion se da un ejemplo de como se consutaria el tipo de encuesta con s
 ```
 GET /URL-FORULY/encuesta
 {tittle:"Encuesta ",
-fechaini:"04/07/2021,
-fechafin:"05/07/2021",
 ID:1
+pregunta_1"ejemplo de pregunta",
+pregunta_2"ejemplo de pregunta",
+pregunta_3"ejemplo de pregunta",
 }
 ```
 ## Ejemplo de datos de una respuestas de preguntas de opcion multible
@@ -232,11 +233,6 @@ Una vez ya planteada la idea del diseño ya se empezara con la parte de progrmar
 * En esta seccion se reponderan a las preguntas que se crearon, esto dependiendo el id
   * Esta tomara los datos del nombre de la encuesta y de su id como tambei las pregutas , pero essta vez seran renplasados por las respuestas
 `<curl http://localhost:8080/url_messa/4/comida/respuesta -X POST -H 'Content-Type: application/json' -d '{"id": "4", "encuesta": "comida", "respuesta_1": "no era bait", "respuesta_2": " soy una respuesta", "respuesta_3": "respuesta de bait"}'>`
-
-## Curl para poder modificar la informacion de los usarios
-* En caso de que se quiera hacer correccioes a las pregunnta de deterinada encuesta
-  * Esta podra ser corregida tanto como el id, la encuesta y las preguntas
-`<curl http://localhost:8080/url_messa/4/comida -X POST -H 'Content-Type: application/json' -d '{"encuesta": "comida","id": "4", "pregunta_1": "era bait", "pregunta_2": "no soy una respuesta", "pregunta_3": "respuesta"}'>`
 
 ## curl para hacer consultas sobre los usarios
 * Las consultas se utilizaran para saber los usarios que han contestado y el id de la encuesta
